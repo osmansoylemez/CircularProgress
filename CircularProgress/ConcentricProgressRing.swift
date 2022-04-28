@@ -38,13 +38,13 @@ open class ProgressRingLayer: CAShapeLayer {
         }
     }
     
-    public var startAngle: CGFloat = CGFloat(-M_PI_2) {
+    public var startAngle: CGFloat = CGFloat(-Double.pi / 2) {
         didSet {
-            while startAngle >= CGFloat(M_PI) {
-                startAngle -= CGFloat(M_PI * 2)
+            while startAngle >= CGFloat(Double.pi) {
+                startAngle -= CGFloat(Double.pi * 2)
             }
-            while startAngle < CGFloat(-M_PI) {
-                startAngle += CGFloat(M_PI * 2)
+            while startAngle < CGFloat(-Double.pi) {
+                startAngle += CGFloat(Double.pi * 2)
             }
         }
     }
@@ -91,23 +91,30 @@ open class ProgressRingLayer: CAShapeLayer {
             textLayer.contentsScale = UIScreen.main.scale
             textLayer.isWrapped = true
             textLayer.alignmentMode = .center
-            self.addSublayer(textLayer)
+            addSublayer(textLayer)
         }
         
-        textLayer.font = UIFont.systemFont(ofSize: 10.0)
-        textLayer.fontSize = 10.0
+        textLayer.foregroundColor = UIColor.red.cgColor
+        textLayer.backgroundColor = UIColor.yellow.cgColor
+        textLayer.font = UIFont.systemFont(ofSize: 12.0)
+        textLayer.fontSize = 12.0
         textLayer.string = "\(progress)"
-        textLayer.backgroundColor = UIColor.red.cgColor
         
-        let pieCenter = CGPoint.init(x: 100.0, y: 100.0)
-        let strokeRadius = 80.0
-        let size = CGSize.init(width: 20.0, height: 12.0)
+        let size: CGSize = CGSize.init(width: 20.0, height: 12.0)
         textLayer.frame = CGRect.init(x: 0, y: 0, width: size.width, height: size.height)
         
-        let midAngle: Double = (startProgress + strokeStart + strokeEnd) * Double.pi + startAngle
+        var startAngle = -90.0 + ( startProgress * 360)
+        var value = progress - startProgress
+        var endAngle = startAngle + ( value * 360 ) - 4
+        var midAngel = startAngle + (endAngle - startAngle)/2
+        print("====== \(startAngle) \(endAngle) \(midAngel)")
         
-        textLayer.position = CGPoint.init(x: pieCenter.x + strokeRadius * cos(midAngle),
-                                          y: pieCenter.y + strokeRadius * sin(midAngle))
+        let  x = 100.0  + (82.0) * CGFloat(cos(CGFloat(midAngel).deg2rad()))
+        let  y = 100.0  + (82.0) * CGFloat(sin(CGFloat(midAngel).deg2rad()))
+        
+        textLayer.position = CGPoint.init(x: x, y: y)
+        print("\(x) \(y)")
+
     }
     
     open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {

@@ -14,6 +14,7 @@
 		C871CB842814486A001D93C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C871CB832814486A001D93C3 /* Assets.xcassets */; };
 		C871CB872814486A001D93C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C871CB852814486A001D93C3 /* LaunchScreen.storyboard */; };
 		C871CB9D2814A53C001D93C3 /* ConcentricProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB9C2814A53C001D93C3 /* ConcentricProgressRing.swift */; };
+		C871CB9F281A22F0001D93C3 /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB9E281A22F0001D93C3 /* Circular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C871CB862814486A001D93C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C871CB882814486A001D93C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C871CB9C2814A53C001D93C3 /* ConcentricProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentricProgressRing.swift; sourceTree = "<group>"; };
+		C871CB9E281A22F0001D93C3 /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
 		D717CF9FD542942930682BE8 /* Pods-CircularProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.debug.xcconfig"; path = "Target Support Files/Pods-CircularProgress/Pods-CircularProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		EB51A38214779DA2A977093B /* Pods-CircularProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.release.xcconfig"; path = "Target Support Files/Pods-CircularProgress/Pods-CircularProgress.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				C871CB832814486A001D93C3 /* Assets.xcassets */,
 				C871CB852814486A001D93C3 /* LaunchScreen.storyboard */,
 				C871CB882814486A001D93C3 /* Info.plist */,
+				C871CB9E281A22F0001D93C3 /* Circular.swift */,
 			);
 			path = CircularProgress;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				C871CB7F28144865001D93C3 /* ViewController.swift in Sources */,
 				C871CB7B28144865001D93C3 /* AppDelegate.swift in Sources */,
+				C871CB9F281A22F0001D93C3 /* Circular.swift in Sources */,
 				C871CB9D2814A53C001D93C3 /* ConcentricProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
