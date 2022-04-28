@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC17CE81B1D865513B145019 /* Pods_CircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4B4DEA317649AC6F594E29 /* Pods_CircularProgress.framework */; };
 		C871CB7B28144865001D93C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB7A28144865001D93C3 /* AppDelegate.swift */; };
-		C871CB7D28144865001D93C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB7C28144865001D93C3 /* SceneDelegate.swift */; };
 		C871CB7F28144865001D93C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB7E28144865001D93C3 /* ViewController.swift */; };
 		C871CB8228144865001D93C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C871CB8028144865001D93C3 /* Main.storyboard */; };
 		C871CB842814486A001D93C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C871CB832814486A001D93C3 /* Assets.xcassets */; };
 		C871CB872814486A001D93C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C871CB852814486A001D93C3 /* LaunchScreen.storyboard */; };
+		C871CB9D2814A53C001D93C3 /* ConcentricProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C871CB9C2814A53C001D93C3 /* ConcentricProgressRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D4B4DEA317649AC6F594E29 /* Pods_CircularProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C871CB7728144865001D93C3 /* CircularProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C871CB7A28144865001D93C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C871CB7C28144865001D93C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C871CB7E28144865001D93C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C871CB8128144865001D93C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C871CB832814486A001D93C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C871CB862814486A001D93C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C871CB882814486A001D93C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C871CB9C2814A53C001D93C3 /* ConcentricProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentricProgressRing.swift; sourceTree = "<group>"; };
+		D717CF9FD542942930682BE8 /* Pods-CircularProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.debug.xcconfig"; path = "Target Support Files/Pods-CircularProgress/Pods-CircularProgress.debug.xcconfig"; sourceTree = "<group>"; };
+		EB51A38214779DA2A977093B /* Pods-CircularProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularProgress.release.xcconfig"; path = "Target Support Files/Pods-CircularProgress/Pods-CircularProgress.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC17CE81B1D865513B145019 /* Pods_CircularProgress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				C871CB7928144865001D93C3 /* CircularProgress */,
 				C871CB7828144865001D93C3 /* Products */,
+				F797EBA531CBA357E76A8412 /* Pods */,
+				F22BFC6369573D08F192198C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +63,8 @@
 		C871CB7928144865001D93C3 /* CircularProgress */ = {
 			isa = PBXGroup;
 			children = (
+				C871CB9C2814A53C001D93C3 /* ConcentricProgressRing.swift */,
 				C871CB7A28144865001D93C3 /* AppDelegate.swift */,
-				C871CB7C28144865001D93C3 /* SceneDelegate.swift */,
 				C871CB7E28144865001D93C3 /* ViewController.swift */,
 				C871CB8028144865001D93C3 /* Main.storyboard */,
 				C871CB832814486A001D93C3 /* Assets.xcassets */,
@@ -67,6 +74,23 @@
 			path = CircularProgress;
 			sourceTree = "<group>";
 		};
+		F22BFC6369573D08F192198C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D4B4DEA317649AC6F594E29 /* Pods_CircularProgress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F797EBA531CBA357E76A8412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D717CF9FD542942930682BE8 /* Pods-CircularProgress.debug.xcconfig */,
+				EB51A38214779DA2A977093B /* Pods-CircularProgress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C871CB8B2814486A001D93C3 /* Build configuration list for PBXNativeTarget "CircularProgress" */;
 			buildPhases = (
+				D00EEA981A0F20C8FEC90286 /* [CP] Check Pods Manifest.lock */,
 				C871CB7328144865001D93C3 /* Sources */,
 				C871CB7428144865001D93C3 /* Frameworks */,
 				C871CB7528144865001D93C3 /* Resources */,
@@ -99,6 +124,7 @@
 				TargetAttributes = {
 					C871CB7628144865001D93C3 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -133,6 +159,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D00EEA981A0F20C8FEC90286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CircularProgress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C871CB7328144865001D93C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +191,7 @@
 			files = (
 				C871CB7F28144865001D93C3 /* ViewController.swift in Sources */,
 				C871CB7B28144865001D93C3 /* AppDelegate.swift in Sources */,
-				C871CB7D28144865001D93C3 /* SceneDelegate.swift in Sources */,
+				C871CB9D2814A53C001D93C3 /* ConcentricProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +335,11 @@
 		};
 		C871CB8C2814486A001D93C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D717CF9FD542942930682BE8 /* Pods-CircularProgress.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +357,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.muffine.CircularProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,9 +366,11 @@
 		};
 		C871CB8D2814486A001D93C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB51A38214779DA2A977093B /* Pods-CircularProgress.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -331,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.muffine.CircularProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
